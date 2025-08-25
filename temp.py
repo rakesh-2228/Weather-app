@@ -6,7 +6,7 @@ import requests #for run url we use requests module
 
 def data_get(): #store  data
     city=city_name.get() #city name data store
-    data=requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=74adf478e3ad3537384096fcfffcdf44").json() #we use json() function to convert data in json format / we use get() function to get dta from url
+    data=requests.get("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=REPLACE_WITH_YOUR_OWN_API_KE").json() #we use json() function to convert data in json format / we use get() function to get dta from url
 
     w_label1.config(text=data["weather"][0]["main"])
 
